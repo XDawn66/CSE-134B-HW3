@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      #image_main {
+        width: 20rem;
+        height: auto;
+      }
+      img {
+        width: 20rem;
+        height: auto;
+      }
+    </style>
+    <title>My portfolio</title>
+  </head>
+  <body>
+<nav id="nav">
+    <ul class="links">
+      <li class="active"><a href="Home.html">Home</a></li>
+    </ul>
+    <ul class="links">
+      <li class="active"><a href="pages/About.html">About Me</a></li>
+    </ul>
+    <ul class="links">
+      <li class="active"><a href="pages/Project.html">Projects</a></li>
+    </ul>
+    <ul class="links">
+      <li class="active"><a href="pages/Demo.html">Demo</a></li>
+    </ul>
+    <ul class="links">
+      <li class="active"><a href="pages/Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+	<header>
+ 	<search>
+    	<form action="/search">
+      	<input type="text" placeholder="Search..." >
+      	<button type="submit">Search</button>
+    	</form>
+  	</search>
+	</header>
+    <noscript>
+      <p>Ops, JavaScript is disabled. Some features may not work!</p>
+    </noscript>
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="green"
+        stroke-width="4"
+        fill="yellow"
+      />
+    </svg>
+    <audio controls>
+      <source src="audio-file.mp3" type="audio/mpeg" >
+      <source src="audio-file.ogg" type="audio/ogg" >
+      Your browser does not support the audio element.
+    </audio>
+    <hgroup>
+      <h1><strong> Zhenyu Jiang</strong></h1>
+      <p>CSE student @ UCSD</p>
+    </hgroup>
+    <p>
+      Hi, I am Zhenyu who Passionate on coding and robotics. My goal is to make
+      my own personal robot in the future.
+    </p>
+    <h3>Favor quote</h3>
+    <blockquote>
+      <i
+        >"Success is no accident. It is hard work, perseverance, learning,
+        studying, sacrifice, and most of all, love of what you are doing."
+        <cite>— Pelé</cite></i
+      >
+    </blockquote>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <table>
+        <caption>
+          My Programming Skills
+        </caption>
+        <colgroup>
+          <col >
+          <col >
+          <col >
+        </colgroup>
+        <tr>
+          <th>Programming Language</th>
+          <th>Experience Level</th>
+          <th>Projects Completed</th>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Advanced</td>
+          <td>10+</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Intermediate</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>HTML & CSS</td>
+          <td>Intermediate</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>C++</td>
+          <td>Intermediate</td>
+          <td>10+</td>
+        </tr>
+      </table>
+      <table>
+        <caption>
+          My Language Skills
+        </caption>
+        <colgroup>
+          <col >
+          <col >
+        </colgroup>
+        <tr>
+          <th>Language</th>
+          <th>Proficiency Level</th>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>Fluent</td>
+        </tr>
+        <tr>
+          <td>Mandarin</td>
+          <td>Fluent</td>
+        </tr>
+        <tr>
+          <td>Cantonese</td>
+          <td>Fluent</td>
+        </tr>
+      </table>
+    </section>
+    <main>
+      <section class="projects">
+        <h2>Projects Preview</h2>
+
+        <video width="640" height="360" controls>
+          <source src="demo-video.mp4" type="video/mp4" >
+          <source src="demo-video.webm" type="video/webm" >
+          Your browser does not support the video tag.
+        </video>
+
+        <article>
+          <h3>project1</h3>
+          <figure id="project1">
+            <picture>
+              <source srcset="assets/image1.png" type="image/png" >
+              <img src="assets/image1.png" alt="HARO Anime Song Recommender" >
+            </picture>
+            <figcaption>HARO Anime Song Recommender</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>project2</h3>
+          <figure id="project2">
+            <picture>
+              <source srcset="assets/snake.png" type="image/png" >
+              <img src="assets/snake.png" alt="The Snake Game" >
+            </picture>
+            <figcaption>The Snake Game</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>project3</h3>
+          <figure id="project3">
+            <picture>
+              <source srcset="assets/pig.png" type="image/png" >
+              <img src="assets/pig.png" alt="Pig Games" >
+            </picture>
+            <figcaption>Pig Games</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>project4</h3>
+          <figure id="project4">
+            <picture>
+              <source srcset="assets/p1.png" type="image/png" >
+              <img src="assets/p1.png" alt="Text Adventure Game" >
+            </picture>
+            <figcaption>Text Adventure Game</figcaption>
+          </figure>
+        </article>
+
+        <button onclick="location.href='pages/Project.html';">See More</button>
+      </section>
+    </main>
+    <script></script>
+  <hr>
+  <footer id="footer">
+    <section class="split contact">
+      <h2>Contact Information</h2>
+      <address>
+        Email: <a href="mailto:johndoe@example.com">johndoe@example.com</a
+        ><br >
+        Phone: +1 123 456 7890<br >
+        Website:
+        <a href="https://www.johndoeportfolio.com" target="_blank"
+          >www.johndoeportfolio.com</a
+        >
+      </address>
+      <aside>
+        <h3>Social</h3>
+        <ul class="icons alt">
+          <li>
+            <a href="#" class=""><span class="label">Twitter</span></a>
+          </li>
+          <li>
+            <a href="#" class=""><span class="label">Facebook</span></a>
+          </li>
+          <li>
+            <a href="#" class=""><span class="label">Instagram</span></a>
+          </li>
+          <li>
+            <a href="#" class=""><span class="label">GitHub</span></a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+  </footer>
+</body>
+</html>
