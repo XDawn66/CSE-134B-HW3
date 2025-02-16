@@ -509,19 +509,26 @@ article p {
   background-color: #5ea39a;
 }
 
-/* Tablets and Smaller Laptops */
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 400px) and (max-width: 1024px) {
   h1 {
     font-size: 36px; /* Increase font size */
   }
 
-  h2 {
-    font-size: 28px; /* Increase size of h2 */
+  h2 a {
+    font-size: 4rem; /* Increase size of h2 */
   }
 
   body {
     font-size: 18px; /* Slightly larger text for readability */
     padding: 2rem; /* Add padding for better spacing on smaller screens */
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  label {
+    transform: scale(1.5);
   }
 
   nav ul {
@@ -535,53 +542,100 @@ article p {
     width: 90%; /* Allow for more width on these elements */
   }
 
-  .simple-search-bar {
-    max-width: 90%; /* Make search bar more flexible */
-    margin: 20px auto;
-  }
-
-  .simple-search-bar input[type="text"],
-  .simple-search-bar button {
-    font-size: 18px; /* Increase font size of input and button */
-    padding: 12px 20px; /* Make buttons larger */
-  }
-
   .button_p {
-    font-size: 18px; /* Increase button size */
-    padding: 15px 30px; /* Increase padding */
+    font-size: 2rem;
+    padding: 15px 30px;
   }
 
   select {
-    font-size: 18px; /* Increase font size for select */
-    padding: 12px; /* Make select field larger */
+    font-size: 18px;
+    padding: 12px;
   }
 
   details {
-    font-size: 18px; /* Increase font size for details */
-    padding: 1rem; /* Add padding to details */
+    font-size: 18px;
+    padding: 1rem;
   }
 
   label,
   #filter {
-    font-size: 18px; /* Increase font size for labels */
-    padding: 0.5rem; /* Add padding for better spacing */
+    font-size: 2rem;
+    padding: 0.5rem;
   }
 
+  legend {
+    font-size: 2rem;
+  }
+
+  .li {
+    font-size: 2rem;
+  }
   .contact-form {
-    max-width: 90%; /* Allow contact form to be wider */
+    max-width: 100%; /* Allow contact form to be wider */
     padding: 1.5rem; /* Increase padding for better usability */
   }
-
   .contact-form input,
   .contact-form textarea,
   .contact-form select {
-    font-size: 18px; /* Larger text for form inputs */
+    font-size: 1.5rem; /* Larger text for form inputs */
     padding: 12px; /* Increase padding for form elements */
   }
 
+  .contact-form legend {
+    font-size: 2rem;
+  }
   .contact-form input[type="submit"] {
-    font-size: 18px; /* Increase button font size */
+    font-size: 2rem; /* Increase button font size */
     padding: 12px 25px; /* Increase padding on submit button */
+  }
+
+  address {
+    font-size: 1.2rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  .label {
+    font-size: 15px;
+  }
+
+  .audio-container {
+    padding: 2rem;
+  }
+  audio {
+    transform: scale(1.5);
+  }
+
+  button {
+    transform: scale(1.5);
+  }
+
+  section h2 {
+    font-size: 3rem;
+  }
+
+  section p {
+    font-size: 2rem;
+  }
+
+  summary {
+    font-size: 1rem;
+  }
+
+  pre {
+    font-size: 1.5rem;
+  }
+
+  div label {
+    font-size: 0.5rem;
+  }
+  button {
+    font-size: 2rem;
+  }
+  custom-button {
+    font-size: 2rem;
   }
 }
 
@@ -609,12 +663,6 @@ article p {
   img,
   table {
     width: 60%; /* More compact visuals */
-  }
-
-  .simple-search-bar input[type="text"],
-  .simple-search-bar button {
-    font-size: 20px; /* Larger text for search bar on desktops */
-    padding: 15px 25px; /* Increase size of input and button */
   }
 
   .button_p {
