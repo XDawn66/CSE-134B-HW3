@@ -282,46 +282,6 @@ table {
   margin: 0 auto; /* Center alignment */
 }
 
-/* Tablets and Smaller Laptops */
-@media (min-width: 600px) and (max-width: 1024px) {
-  h1 {
-    font-size: 32px;
-  }
-  body {
-    font-size: 16px; /* Slightly larger text for readability */
-    padding: 1rem; /* Add padding for better spacing on smaller screens */
-  }
-  nav ul {
-    display: flex;
-    justify-content: space-around; /* Evenly space out navigation items */
-  }
-
-  .image-frame,
-  img,
-  table {
-    width: 80%; /* Constrain width for better layout */
-  }
-}
-
-/* Desktops: Large Screens */
-@media (min-width: 1025px) {
-  body {
-    font-size: 18px; /* Larger text for desktops */
-    margin: 2rem auto; /* Add breathing space */
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: center; /* Center align navigation items */
-  }
-
-  .image-frame,
-  img,
-  table {
-    width: 60%; /* More compact visuals */
-  }
-}
-
 .simple-search-bar {
   display: flex;
   justify-content: center;
@@ -547,4 +507,135 @@ article p {
 
 .contact-form input[type="submit"]:hover {
   background-color: #5ea39a;
+}
+
+/* Tablets and Smaller Laptops */
+@media (min-width: 600px) and (max-width: 1024px) {
+  h1 {
+    font-size: 36px; /* Increase font size */
+  }
+
+  h2 {
+    font-size: 28px; /* Increase size of h2 */
+  }
+
+  body {
+    font-size: 18px; /* Slightly larger text for readability */
+    padding: 2rem; /* Add padding for better spacing on smaller screens */
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around; /* Evenly space out navigation items */
+  }
+
+  .image-frame,
+  img,
+  table {
+    width: 90%; /* Allow for more width on these elements */
+  }
+
+  .simple-search-bar {
+    max-width: 90%; /* Make search bar more flexible */
+    margin: 20px auto;
+  }
+
+  .simple-search-bar input[type="text"],
+  .simple-search-bar button {
+    font-size: 18px; /* Increase font size of input and button */
+    padding: 12px 20px; /* Make buttons larger */
+  }
+
+  .button_p {
+    font-size: 18px; /* Increase button size */
+    padding: 15px 30px; /* Increase padding */
+  }
+
+  select {
+    font-size: 18px; /* Increase font size for select */
+    padding: 12px; /* Make select field larger */
+  }
+
+  details {
+    font-size: 18px; /* Increase font size for details */
+    padding: 1rem; /* Add padding to details */
+  }
+
+  label,
+  #filter {
+    font-size: 18px; /* Increase font size for labels */
+    padding: 0.5rem; /* Add padding for better spacing */
+  }
+
+  .contact-form {
+    max-width: 90%; /* Allow contact form to be wider */
+    padding: 1.5rem; /* Increase padding for better usability */
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 18px; /* Larger text for form inputs */
+    padding: 12px; /* Increase padding for form elements */
+  }
+
+  .contact-form input[type="submit"] {
+    font-size: 18px; /* Increase button font size */
+    padding: 12px 25px; /* Increase padding on submit button */
+  }
+}
+
+/* Desktops: Large Screens */
+@media (min-width: 1025px) {
+  body {
+    font-size: 20px; /* Larger text for desktops */
+    margin: 2rem auto; /* Add breathing space */
+  }
+
+  h1 {
+    font-size: 40px; /* Larger header for desktop */
+  }
+
+  h2 {
+    font-size: 32px; /* Larger sub-header */
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center; /* Center align navigation items */
+  }
+
+  .image-frame,
+  img,
+  table {
+    width: 60%; /* More compact visuals */
+  }
+
+  .simple-search-bar input[type="text"],
+  .simple-search-bar button {
+    font-size: 20px; /* Larger text for search bar on desktops */
+    padding: 15px 25px; /* Increase size of input and button */
+  }
+
+  .button_p {
+    font-size: 20px; /* Larger button for desktop */
+    padding: 18px 35px; /* Increase padding for larger buttons */
+  }
+
+  select {
+    font-size: 20px; /* Larger select dropdown */
+    padding: 14px; /* Bigger padding for select field */
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 20px; /* Larger form inputs */
+    padding: 15px; /* Larger padding for form inputs */
+  }
+
+  .contact-form input[type="submit"] {
+    font-size: 20px; /* Larger submit button */
+    padding: 15px 30px; /* Bigger submit button */
+  }
 }
