@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8" />
     <title>My portfolio</title>
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
   <nav id="nav">
     <ul class="links">
-      <li class="active"><a href="../Home.html">Home</a></li>
-    </ul>
-    <ul class="links">
-      <li class="active"><a href="About.html">About Me</a></li>
-    </ul>
-    <ul class="links">
-      <li class="active"><a href="Project.html">Projects</a></li>
-    </ul>
-    <ul class="links">
+      <li><a href="../Home.html">Home</a></li>
+      <li><a href="About.html">About Me</a></li>
+      <li><a href="Project.html">Projects</a></li>
       <li class="active"><a href="Demo.html">Demo</a></li>
-    </ul>
-    <ul class="links">
-      <li class="active"><a href="Contact.html">Contact</a></li>
+      <li><a href="Contact.html">Contact</a></li>
     </ul>
   </nav>
   <body>
@@ -26,8 +19,7 @@
       <h2>Project 1</h2>
       <p>Brief info</p>
       <iframe
-        width="640"
-        height="360"
+        class="responsive-video"
         src="https://www.youtube.com/embed/your-video-id"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -56,8 +48,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
       <h2>Project 2</h2>
       <p>Brief info</p>
       <iframe
-        width="640"
-        height="360"
+        class="responsive-video"
         src="https://www.youtube.com/embed/your-video-id"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -87,8 +78,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
       <h2>Project 3</h2>
       <p>Brief info</p>
       <iframe
-        width="640"
-        height="360"
+        class="responsive-video"
         src="https://www.youtube.com/embed/your-video-id"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -115,21 +105,20 @@ print 'It took ' + i + ' iterations to sort the deck.';
     </section>
   </body>
   <hr />
-  <footer>
-    <section class="split contact">
-      <h2>Contact Information</h2>
+  <footer id="footer">
+    <h2>Contact Information</h2>
+    <section class="split-contact">
       <address>
         Email: <a href="mailto:johndoe@example.com">johndoe@example.com</a
-        ><br >
-        Phone: +1 123 456 7890<br >
+        ><br />
+        Phone: +1 123 456 7890<br />
         Website:
         <a href="https://www.johndoeportfolio.com" target="_blank"
           >www.johndoeportfolio.com</a
         >
       </address>
       <aside>
-        <h3>Social</h3>
-        <ul class="icons alt">
+        <ul class="icons-alt">
           <li>
             <a href="#" class=""><span class="label">Twitter</span></a>
           </li>
